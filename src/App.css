@@ -1,0 +1,43 @@
+:root {
+  --mainblue: #2a2a72;
+  --lightorange: #FE9900;
+  --mainwhite: #f3f3f3;
+  --maindark: #212529;
+  --mainyellow: #ffa400;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mainyellow); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lightorange); 
+}
+body {
+  font-family: 'Urbanist', sans-serif !important;
+  background: var(--mainwhite) !important;
+  color: var(--maindark) !important;
+}
+
+.text-title {
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+.text-yellow{
+  color: var(--mainyellow);
+}
+.text-bright{
+  color: var(--lightblue);
+}
+.logo{
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+}
