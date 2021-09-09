@@ -17,6 +17,7 @@ class ProductProvider extends Component {
         // products:[...storeProducts],
 
         products: [],
+        // * one single product
         detailProduct: detailProduct
     }
     componentDidMount() {
@@ -37,30 +38,32 @@ class ProductProvider extends Component {
     }
 
 
-
+    addToCart = (id) => {
+        console.log("cart id = " + id)
+    };
 
     handleDetail = () => {
         console.log("DETAIL")
-    }
-    addToCart = () => {
-        console.log("HELLO FROM CART")
-    }
+    };
+
+
     render() {
         return (
 
             //  * Value can be an OBJECT 😮 
             //  * take data from data.js
 
-            <ProductContext.Provider value={{
-                // products:this.state.products
+            <ProductContext.Provider
+                value={{
+                    // products:this.state.products
 
-                // * DESTRUCTION 😶😶 
+                    // * DESTRUCTION 😶😶 
 
-                ...this.state,
-                handleDetail: this.handleDetail,
-                addTocart: this.addToCart
+                    ...this.state,
+                    handleDetail: this.handleDetail,
+                    addToCart: this.addToCart
 
-            }}>
+                }}>
 
                 {this.props.children}
             </ProductContext.Provider>

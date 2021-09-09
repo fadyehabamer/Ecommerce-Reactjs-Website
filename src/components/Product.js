@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "../Context";
-import  PropTypes  from "prop-types";
+import PropTypes from "prop-types";
 export default class Product extends Component {
   render() {
     const { id, title, img, price, inCart } = this.props.product;
@@ -23,8 +23,8 @@ export default class Product extends Component {
                     className="cart-btn"
                     disabled={inCart ? true : false}
                     onClick={() => {
-                      value.addToCart(id);
-                      value.openModal(id);
+                      value.addToCart();
+                      // value.openModal(id);
                     }}
                   >
                     {inCart ? (
@@ -53,14 +53,14 @@ export default class Product extends Component {
 }
 
 // * PropTypes for Type Checking in data.js file
-Product.propTypes={
+Product.propTypes = {
   // * setting up
-  product:PropTypes.shape({
-    id:PropTypes.number,
-    img:PropTypes.string,
-    title:PropTypes.string,
-    price:PropTypes.number,
-    inCart:PropTypes.bool
+  product: PropTypes.shape({
+    id: PropTypes.number,
+    img: PropTypes.string,
+    title: PropTypes.string,
+    price: PropTypes.number,
+    inCart: PropTypes.bool
   }).isRequired
   // * Making them required
 }
