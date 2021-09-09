@@ -35,15 +35,27 @@ class ProductProvider extends Component {
         this.setState(() => {
             return { products: tempProducts }
         })
-    }
+    };
 
+
+    // * return ITEM wich has the same id
+    getItem = (id) => {
+        const product = this.state.products.find(item => item.id === id)
+        return product
+    }
 
     addToCart = (id) => {
         console.log("cart id = " + id)
     };
 
-    handleDetail = () => {
-        console.log("DETAIL")
+
+    // * change the content of detailproduct in data.js with specific product when clicked
+    handleDetail = (id) => {
+        // * 😤😤😤😤😤😤😤😤😤 I FORGOT TO PASS ID
+        const product = this.getItem(id)
+        this.setState(() => {
+            return { detailProduct: product }
+        })
     };
 
 
