@@ -10,18 +10,25 @@
 ::-webkit-scrollbar {
   width: 7px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: var(--mainyellow); 
+  background: var(--mainyellow);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--lightorange); 
+  background: var(--lightorange);
 }
+
 body {
   font-family: 'Urbanist', sans-serif !important;
   background: var(--mainwhite) !important;
   color: var(--maindark) !important;
+  overflow-x: hidden !important;
+}
+
+.navbar {
+  flex-wrap: nowrap !important;
 }
 
 .text-title {
@@ -29,15 +36,20 @@ body {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
-.text-yellow{
+
+.text-yellow {
   color: var(--mainyellow);
 }
 
-.logo{
+.logo {
   background-color: transparent;
   width: 50px;
   height: 50px;
-  margin-left: 30px;
+  margin-left: 5px;
+}
+
+.nav-item {
+  margin: 0px 10px;
 }
 
 .details-btn {
@@ -77,3 +89,5 @@ body {
   opacity: 1;
   right: 0;
 }
+
+/* landing Style */

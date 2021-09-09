@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -12,7 +12,8 @@ import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
-
+import Landing from './components/Landing'
+import About from './components/About'
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Switch>
         {/* Home Component */}
         <Route exact path="/" component={ProductList} />
+        <Route path="/landing" component={Landing} />
+        <Route path="/about" component={About} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
 
