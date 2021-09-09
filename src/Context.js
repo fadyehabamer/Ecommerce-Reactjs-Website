@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { storeProducts , detailProduct } from './data';
+import { storeProducts, detailProduct } from './data';
 
 // * NO NEED TO PASS PROPS
 // * 1- create new context object
@@ -7,7 +7,7 @@ const ProductContext = React.createContext()
 //  * Provider => provide all data
 
 class ProductProvider extends Component {
-    state={
+    state = {
         // products:storeProducts 
 
         // * Destruct .. to get all DATA from array or object
@@ -16,33 +16,33 @@ class ProductProvider extends Component {
         // ! will not work bc object in data.js is nested
         // products:[...storeProducts],
 
-        products:[],
-        detailProduct:detailProduct
+        products: [],
+        detailProduct: detailProduct
     }
-    componentDidMount(){
+    componentDidMount() {
         // * returning copy of this values
         this.setProducts();
     }
 
     //  * Get Copy of Products not a refrence of them
-    setProducts = () =>{
+    setProducts = () => {
         let tempProducts = [];
         storeProducts.forEach(item => {
-            const singleItem = {...item}
-            tempProducts = [...tempProducts,singleItem]
+            const singleItem = { ...item }
+            tempProducts = [...tempProducts, singleItem]
         })
-        this.setState(()=>{
-            return {products:tempProducts}
+        this.setState(() => {
+            return { products: tempProducts }
         })
     }
 
 
 
 
-    handleDetail = ()=>{
+    handleDetail = () => {
         console.log("DETAIL")
     }
-    addToCart = () =>{
+    addToCart = () => {
         console.log("HELLO FROM CART")
     }
     render() {
@@ -51,22 +51,22 @@ class ProductProvider extends Component {
             //  * Value can be an OBJECT 😮 
             //  * take data from data.js
 
-            <ProductContext.Provider value= {{
+            <ProductContext.Provider value={{
                 // products:this.state.products
-                
+
                 // * DESTRUCTION 😶😶 
 
                 ...this.state,
-                handleDetail:this.handleDetail,
-                addTocart:this.addToCart
+                handleDetail: this.handleDetail,
+                addTocart: this.addToCart
 
             }}>
 
-              {this.props.children}  
+                {this.props.children}
             </ProductContext.Provider>
         )
     }
 }
 
-const ProductConsumer = ProductContext.Consumer; 
-export {ProductProvider,ProductConsumer}
+const ProductConsumer = ProductContext.Consumer;
+export { ProductProvider, ProductConsumer }
