@@ -8,9 +8,37 @@ const ProductContext = React.createContext()
 
 class ProductProvider extends Component {
     state={
-        products:storeProducts,
+        // products:storeProducts 
+
+        // * Destruct .. to get all DATA from array or object
+        // * it makes a copy of the desired object or array element by assigning them in its own new variables, 
+        // * later we can use this new variable in React (class or functional) components.
+        // ! will not work bc object in data.js is nested
+        // products:[...storeProducts],
+
+        products:[],
         detailProduct:detailProduct
     }
+    componentDidMount(){
+        // * returning copy of this values
+        this.setProducts();
+    }
+
+    //  * Get Copy of Products not a refrence of them
+    setProducts = () =>{
+        let tempProducts = [];
+        storeProducts.forEach(item => {
+            const singleItem = {...item}
+            tempProducts = [...tempProducts,singleItem]
+        })
+        this.setState(()=>{
+            return {products:tempProducts}
+        })
+    }
+
+
+
+
     handleDetail = ()=>{
         console.log("DETAIL")
     }
