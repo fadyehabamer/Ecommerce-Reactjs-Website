@@ -27,9 +27,6 @@ body {
   overflow-x: hidden !important;
 }
 
-.navbar {
-  flex-wrap: nowrap !important;
-}
 
 .text-title {
   font-family: 'Prompt', sans-serif;
@@ -45,7 +42,7 @@ body {
   background-color: transparent;
   width: 50px;
   height: 50px;
-  margin-left: 5px;
+  margin-left:14px;
 }
 
 .nav-item {

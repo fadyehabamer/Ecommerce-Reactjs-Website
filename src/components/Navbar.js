@@ -9,21 +9,16 @@ export default class Navbar extends Component {
     render() {
         return (
 
-            <NavWrapper className="navbar  navbar-dark bg-dark" >
+            <NavWrapper className="navbar navbar-dark bg-dark px-3" >
                 <Link to="/">
                     <img src={logo} alt="logo" className="logo" />
                 </Link>
 
-                <ul className="navbar-nav d-flex flex-row justify-content-s align-items-center" >
+                <ul className="navbar-nav d-flex flex-row flex-wrap justify-content-center align-items-center " >
 
-                    <li className="nav-item">
-                        <Link to="/landing" className="nav-link">
-                            Home
-                        </Link>
-                    </li>
 
                     <li className="nav-item"  >
-                        <Link to="" className="nav-link">
+                        <Link to="/productlist" className="nav-link">
                             Products
                         </Link>
                     </li>
@@ -34,17 +29,20 @@ export default class Navbar extends Component {
                         </Link>
                     </li>
 
+                    <li className="nav-item">
+                        <Link to="/cart" className="nav-link" >
+                            <ButtonContainer>
+                                <span className="mr-2">
+                                    <i className="fas fa-cart-plus"></i>
+
+                                </span> my cart
+                            </ButtonContainer>
+                        </Link>
+                    </li>
 
                 </ul>
 
-                <Link to="/cart" className="ml-auto" >
-                    <ButtonContainer>
-                        <span className="mr-2">
-                            <i className="fas fa-cart-plus"></i>
 
-                        </span> my cart
-                    </ButtonContainer>
-                </Link>
 
 
 
