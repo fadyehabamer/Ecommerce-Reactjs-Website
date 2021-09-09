@@ -23,5 +23,7 @@ transition:all 0.5s ease-in-out;
 &:focus{
     outline:none;
 }
-
 `
+// * customized custom component 
+// color: ${props => (props.[name like class ] ? "var(--mainYellow)" : "var(--lightBlue)")};
+// * if color prop is for name make it yellow else make it blue
