@@ -11,7 +11,7 @@ import ProductList from './components/ProductList';
 // import Product from './components/Product';
 import Details from './components/Details';
 import Cart from './components/Cart';
-import Default from './components/Default';
+import Error from './components/Error';
 import Landing from './components/Landing';
 import About from './components/About';
 import Modal from './components/Modal'
@@ -35,7 +35,7 @@ function App() {
         <Route path="/cart" component={Cart} />
 
         {/* 404 Page  */}
-        <Route component={Default} />
+        <Route component={Error} />
       </Switch>
 
       <Modal/>

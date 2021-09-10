@@ -19,29 +19,43 @@ body {
 .banner {
     width: 100%;
     height: 350px;
-    animation: action 1s infinite  alternate;
+    animation: action 1s infinite alternate;
 }
+
 @-webkit-keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-15px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
 }
+
 @keyframes action {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-15px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
 }
 
 /* * ================================================================= */
 /* start About */
-.social{
+.social {
     margin-top: 15px;
 }
-.social i{
+
+.social i {
     margin-right: 20px;
     font-size: 35px;
     color: var(--maindark);
     transition: all 0.3s ease-in-out;
 }
-.social i:hover{
+
+.social i:hover {
     color: var(--lightorange);
     transform: translateY(-10px);
 }
