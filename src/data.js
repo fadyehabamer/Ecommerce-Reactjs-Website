@@ -122,7 +122,7 @@ export const storeProducts = [
   },
   {
     id: 11,
-    title: "Huawei",
+    title: "Huawei Watch",
     img: "img/product-11.png",
     price: 200,
     company: "Huawei",
