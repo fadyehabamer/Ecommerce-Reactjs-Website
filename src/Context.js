@@ -21,20 +21,20 @@ class ProductProvider extends Component {
         detailProduct: detailProduct,
 
         // * Empty Cart TO TEST
-        cart: [],
+        // cart: [],
 
         // * Product Cart To TEST
-        // cart:storeProducts,
+        cart:storeProducts,
 
         // * Modal
-        modalOpen:false,
+        modalOpen: false,
         // * single product in data.js 
-        modalProduct:detailProduct,
+        modalProduct: detailProduct,
 
         // * Cart
-        carSubTotal:0,
-        cartTax:0,
-        cartTotal:0
+        carSubTotal: 0,
+        cartTax: 0,
+        cartTotal: 0
     }
     componentDidMount() {
         // * returning copy of this values
@@ -93,39 +93,39 @@ class ProductProvider extends Component {
 
 
     // * OPEN MMODAL
-    openModal = (id) =>{
+    openModal = (id) => {
         const product = this.getItem(id);
-        this.setState(()=>{
-            return{
-                modalProduct:product,
-                modalOpen:true
+        this.setState(() => {
+            return {
+                modalProduct: product,
+                modalOpen: true
             }
         })
     }
 
-    closeModal=()=>{
-        this.setState(()=>{
-            return{
-                modalOpen:false
+    closeModal = () => {
+        this.setState(() => {
+            return {
+                modalOpen: false
             }
         })
     }
 
     // * CART
 
-    increment = (id) =>{
+    increment = (id) => {
         console.log("INC METHOD")
     }
 
-    decrement = (id) =>{
+    decrement = (id) => {
         console.log("DEC METHOD")
     }
 
-    removeItem = (id) =>{
+    removeItem = (id) => {
         console.log("DELETE ITEM")
     }
 
-    clearCart = () =>{
+    clearCart = () => {
         console.log("CART CLEARED")
     }
 
@@ -144,12 +144,12 @@ class ProductProvider extends Component {
                     ...this.state,
                     handleDetail: this.handleDetail,
                     addToCart: this.addToCart,
-                    openModal:this.openModal,
-                    closeModal:this.closeModal,
-                    increment:this.increment,
-                    decrement:this.decrement,
-                    removeItem:this.removeItem,
-                    clearCart:this.clearCart,
+                    openModal: this.openModal,
+                    closeModal: this.closeModal,
+                    increment: this.increment,
+                    decrement: this.decrement,
+                    removeItem: this.removeItem,
+                    clearCart: this.clearCart,
 
 
                 }}>
