@@ -21,7 +21,12 @@ class ProductProvider extends Component {
         detailProduct: detailProduct,
 
 
-        cart: []
+        cart: [],
+
+        // * Modal
+        modalOpen:false,
+        // * single product in data.js 
+        modalProduct:detailProduct
     }
     componentDidMount() {
         // * returning copy of this values
@@ -63,7 +68,7 @@ class ProductProvider extends Component {
                 products: tempProducts,
                 cart: [...this.state.cart, product]
             }
-        }, () => { console.log(this.state) })
+        })
 
 
     };
@@ -79,6 +84,25 @@ class ProductProvider extends Component {
     };
 
 
+    // * OPEN MMODAL
+    openModal = (id) =>{
+        const product = this.getItem(id);
+        this.setState(()=>{
+            return{
+                modalProduct:product,
+                modalOpen:true
+            }
+        })
+    }
+
+    closeModal=()=>{
+        this.setState(()=>{
+            return{
+                modalOpen:false
+            }
+        })
+    }
+
     render() {
         return (
 
@@ -93,7 +117,9 @@ class ProductProvider extends Component {
 
                     ...this.state,
                     handleDetail: this.handleDetail,
-                    addToCart: this.addToCart
+                    addToCart: this.addToCart,
+                    openModal:this.openModal,
+                    closeModal:this.closeModal
 
                 }}>
 

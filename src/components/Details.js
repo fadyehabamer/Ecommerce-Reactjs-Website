@@ -57,10 +57,11 @@ export default class Details extends Component {
                                             </button>
                                         </Link>
                                         <button
-                                         className="details-btn"
-                                        disabled={inCart ? true : false}
-                                        onClick={() => {
+                                            className="details-btn"
+                                            disabled={inCart ? true : false}
+                                            onClick={() => {
                                                 value.addToCart(id);
+                                                value.openModal(id);
                                             }}
                                         >
                                             {inCart ? "In cart" : "Add to cart"}
