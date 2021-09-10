@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-// import PayPalButton from "./PayPalButton";
+import PayPalButton from "./payPalButton";
 import { Link } from "react-router-dom";
 import '../../App.css'
 export default class CartTotals extends Component {
     render() {
         // * DESTRUCTION
+
         const {
             cartSubTotal,
             cartTax,
@@ -18,8 +19,8 @@ export default class CartTotals extends Component {
             <React.Fragment>
                 {!emptyCart && (
                     <div className="container">
-                        <div className="row ">
-                            <div className="col-12 cart-btn-buy px-4 my-5">
+                        <div className="row">
+                            <div className="col-10 mt-4 mb-5 text-capitalize">
                                 <Link to="/cart">
                                     <button
                                         className="btn btn-outline-danger text-uppercase mb-3 px-5"
@@ -43,11 +44,11 @@ export default class CartTotals extends Component {
                                     <span className="text-title"> total :</span>{" "}
                                     <strong>$ {cartTotal} </strong>
                                 </h5>
-                                {/* <PayPalButton
+                                <PayPalButton
                                     totalAmount={cartTotal}
                                     clearCart={clearCart}
                                     history={history}
-                                /> */}
+                                />
                             </div>
                         </div>
                     </div>
