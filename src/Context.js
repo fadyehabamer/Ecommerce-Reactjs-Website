@@ -20,13 +20,21 @@ class ProductProvider extends Component {
         // * one single product
         detailProduct: detailProduct,
 
-
+        // * Empty Cart TO TEST
         cart: [],
+
+        // * Product Cart To TEST
+        // cart:storeProducts,
 
         // * Modal
         modalOpen:false,
         // * single product in data.js 
-        modalProduct:detailProduct
+        modalProduct:detailProduct,
+
+        // * Cart
+        carSubTotal:0,
+        cartTax:0,
+        cartTotal:0
     }
     componentDidMount() {
         // * returning copy of this values
@@ -103,6 +111,24 @@ class ProductProvider extends Component {
         })
     }
 
+    // * CART
+
+    increment = (id) =>{
+        console.log("INC METHOD")
+    }
+
+    decrement = (id) =>{
+        console.log("DEC METHOD")
+    }
+
+    removeItem = (id) =>{
+        console.log("DELETE ITEM")
+    }
+
+    clearCart = () =>{
+        console.log("CART CLEARED")
+    }
+
     render() {
         return (
 
@@ -119,7 +145,12 @@ class ProductProvider extends Component {
                     handleDetail: this.handleDetail,
                     addToCart: this.addToCart,
                     openModal:this.openModal,
-                    closeModal:this.closeModal
+                    closeModal:this.closeModal,
+                    increment:this.increment,
+                    decrement:this.decrement,
+                    removeItem:this.removeItem,
+                    clearCart:this.clearCart,
+
 
                 }}>
 
