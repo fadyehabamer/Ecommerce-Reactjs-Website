@@ -5,12 +5,11 @@ body {
     overflow-x: hidden !important;
 }
 
-
 .main-text {
-    font-size: 2.7rem !important;
+    font-size: 2.4rem !important;
     font-weight: 700 !important;
-    line-height: 1.5 !important;
-    margin: 55px 0;
+    line-height: 1.7 !important;
+    margin: 35px 0;
 }
 
 .main-text span {
@@ -29,4 +28,20 @@ body {
 @keyframes action {
     0% { transform: translateY(0); }
     100% { transform: translateY(-15px); }
+}
+
+/* * ================================================================= */
+/* start About */
+.social{
+    margin-top: 15px;
+}
+.social i{
+    margin-right: 20px;
+    font-size: 35px;
+    color: var(--maindark);
+    transition: all 0.3s ease-in-out;
+}
+.social i:hover{
+    color: var(--lightorange);
+    transform: translateY(-10px);
 }
