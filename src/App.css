@@ -49,24 +49,6 @@ body {
   margin-right: 7px;
 }
 
-.navbar-text {
-  margin-left: auto;
-  background-color: var(--lightorange);
-  border-radius: 10px;
-  padding: 10px;
-  color: #fff !important;
-  border: 2px solid var(--lightorange);
-  transition: all 0.5s ease-in-out;
-}
-
-.navbar-expand-md ul{
-  /* margin-bottom: 20px; */
-}
-
-.navbar-text:hover {
-  background-color: transparent;
-}
-
 .navbar-nav {
   margin-left: auto;
 }
