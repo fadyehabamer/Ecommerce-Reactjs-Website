@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, {useState } from 'react'
 // import { Link } from 'react-router-dom'
 import logo from '../logo.svg'
 // import { ButtonContainer } from './Button'
@@ -14,7 +14,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    NavbarText
 } from 'reactstrap';
 
 const Example = (props) => {

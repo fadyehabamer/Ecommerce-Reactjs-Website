@@ -12,8 +12,12 @@ body {
     margin: 35px 0;
 }
 
+.landing-text{
+    font-size: 2.7rem !important;
+}
+
 .main-text span {
-    border-bottom: 2px solid var(--mainyellow);
+    border-bottom: 3px solid var(--mainyellow);
 }
 
 .banner {

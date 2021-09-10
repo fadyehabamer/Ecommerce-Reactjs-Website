@@ -7,15 +7,15 @@ export default class Landing extends Component {
             <React.Fragment>
                 <div className="container my-5">
                     <div className="row">
-                        <div className="col-sm-6 main-text">
+                        <div className="col-sm-6 main-text landing-text">
                             <span>Amazon.</span> <br /> From A to Z <br />
-                            The meaning of Inclusion
+                            The meaning of <span> Inclusion</span>
                         </div>
                         <div className="col-sm-6 second-column  ">
                             <img className="banner" src="../img/landing.svg" alt="" />
                         </div>
                     </div>
-                    
+
                 </div>
 
 

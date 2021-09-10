@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Title from "../Title";
 import CartColumns from "./CartColumns";
 import CartList from "./CartList";
-// import CartTotals from "./CartTotals";
+import CartTotals from "./CartTotals";
 import { ProductConsumer } from "../../Context";
 import EmptyCart from "./EmptyCart";
 export default class Store extends Component {
@@ -17,10 +17,11 @@ export default class Store extends Component {
 
                         if (cart.length > 0) {
                             return (
-                                <section className="mt-4">
+                                <section className="mt-4 px-5">
                                     <Title name="your" title="cart" />
                                     <CartColumns />
-                                    <CartList value={value}/>
+                                    <CartList value={value} />
+                                    <CartTotals value={value} />
                                 </section>
                             );
                         }
