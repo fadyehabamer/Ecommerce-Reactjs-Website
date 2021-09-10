@@ -54,7 +54,6 @@ const Example = (props) => {
 
 
                     </Nav>
-                    <NavbarText>From <span className="slogan-letter"> A </span> to Z</NavbarText>
 
                 </Collapse>
             </Navbar>
