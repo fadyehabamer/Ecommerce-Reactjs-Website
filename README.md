@@ -26,3 +26,4 @@ npm install
 ```
 #### This will do 2 important things
 - Install all required modules
+- Open the project on a LocalHost on your default Browser
