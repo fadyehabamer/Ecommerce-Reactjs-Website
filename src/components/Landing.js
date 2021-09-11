@@ -19,9 +19,9 @@ export default class Landing extends Component {
 
                 <div className="container stats my-5">
                     <div className="col-md-12">
-                    <h2 className="main-text">
-                       <span> Our Statistics </span>
-                    </h2>
+                        <h2 className="main-text">
+                            <span> Our Statistics </span>
+                        </h2>
                         <div className="row ">
                             <div className="col-xl-3 col-lg-6">
                                 <div className="card l-bg-white">
@@ -37,7 +37,7 @@ export default class Landing extends Component {
                                                 </h2>
                                             </div>
                                             <div className="col-4 text-right">
-                                                <span  className="stat-percent">1% <i className="fa fa-arrow-up"></i></span>
+                                                <span className="stat-percent">1% <i className="fa fa-arrow-up"></i></span>
                                             </div>
                                         </div>
                                         <div className="progress mt-1 " data-height="8">
@@ -60,7 +60,7 @@ export default class Landing extends Component {
                                                 </h2>
                                             </div>
                                             <div className="col-4 text-right">
-                                                <span  className="stat-percent">9% <i className="fa fa-arrow-up"></i></span>
+                                                <span className="stat-percent">9% <i className="fa fa-arrow-up"></i></span>
                                             </div>
                                         </div>
                                         <div className="progress mt-1 " data-height="8">
@@ -118,8 +118,8 @@ export default class Landing extends Component {
                         </div>
                     </div>
                 </div>
-  
- 
+
+
 
 
             </React.Fragment>
