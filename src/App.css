@@ -53,6 +53,13 @@ body {
   margin-left: auto;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #B8C3C9;
+}
+nav ul li a :hover{
+  color: var(--mainwhite);
+}
 .details-btn {
   border-radius: 8px;
   background-color: var(--lightorange);
