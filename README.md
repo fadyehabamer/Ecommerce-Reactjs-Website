@@ -42,3 +42,7 @@ npm install
 - Open the project on a LocalHost on your default Browser
 
 <hr>
+
+### 😉 Tips & Tricks
+- Fork & Star the project
+- Feel free to give your opinion
