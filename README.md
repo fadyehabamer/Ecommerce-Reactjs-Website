@@ -13,3 +13,4 @@
 - Boostrap
 - ReactStrap
 - Styled Components
+- Font Awesome
