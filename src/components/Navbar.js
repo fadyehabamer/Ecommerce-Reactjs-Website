@@ -24,8 +24,10 @@ const Example = (props) => {
     return (
         <React.Fragment>
             <Navbar className="px-3" color="dark" dark expand="md">
-                <NavbarBrand href="/">
+                <NavbarBrand>
+                <Link to="/landing">
                     <img src={logo} alt="logo" className="logo" />
+                </Link>
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse className="px-3 text-center" isOpen={isOpen} navbar>
@@ -45,6 +47,21 @@ const Example = (props) => {
                                     About
                                 </Link>
                             </NavLink>
+                        </NavItem>
+
+
+                        <NavItem>
+                            <NavLink>
+                                <Link to="/">
+                                    <span className="mr-2">
+                                    <i className="fas fa-user"></i>
+                                        Register
+                                    </span>
+                                </Link>
+
+
+                            </NavLink>
+
                         </NavItem>
 
                         <NavItem>

@@ -15,7 +15,7 @@ import Error from './components/Error';
 import Landing from './components/Landing';
 import About from './components/About';
 import Modal from './components/Modal'
-
+import SignUp from './components/SignUp'
 function App() {
   return (
     <React.Fragment>
@@ -27,18 +27,22 @@ function App() {
 
       <Switch>
         {/* Home Component */}
-        <Route exact path="/" component={Landing} />
-        <Route  path="/productlist" component={ProductList} />
-        
+        <Route exact path="/" component={SignUp} />
+        <Route exact path="/landing" component={Landing} />
+        <Route path="/productlist" component={ProductList} />
+
         <Route path="/about" component={About} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
+
+        <Route path="/signup" component={SignUp} />
+
 
         {/* 404 Page  */}
         <Route component={Error} />
       </Switch>
 
-      <Modal/>
+      <Modal />
 
     </React.Fragment>
   );

@@ -1,0 +1,108 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainwhite);
+}
+
+.wrapper .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+    max-width: 80%;
+    min-width: 100px;
+    min-height: 400px;
+    padding: 20px 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 36px #222;
+    background-color: #fefefe;
+}
+
+.wrapper .form-wrapper>h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-top: 0.25em;
+    color: var(--maindark);
+}
+
+.wrapper form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper .info {
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.wrapper label {
+    margin-bottom: 0.5em;
+    color: #444;
+    font-weight: lighter;
+}
+
+.wrapper input {
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #d6d1d5;
+}
+
+.wrapper input::placeholder {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #bbb;
+}
+
+.wrapper button {
+    min-width: 100%;
+    cursor: pointer;
+    margin-right: 0.25em;
+    margin-top: 0.5em;
+    padding: 0.938em;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--mainyellow);
+    color: #fefefe;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapper button:hover {
+    background-color: #c37500;
+    color: #fefefe;
+}
+
+.wrapper .error {
+    color: #db2231;
+    font-size: 1rem;
+    display: relative;
+}
+
+.wrapper .fullName,
+.wrapper .email,
+.wrapper .password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.wrapper .fullName {
+    width: 100%;
+}
+
+.wrapper .email,
+.wrapper .password {
+    width: 100%;
+}
+
+.wrapper .submit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
