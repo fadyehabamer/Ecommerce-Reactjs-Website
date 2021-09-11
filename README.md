@@ -3,3 +3,6 @@
 
 #### Overview For the Project
 > **This is an E-Commerce website for selling Electronics like : mobile phones , tablets , laptops , etc**
+
+#### Technical Overview For the Project
+- Technologies used :
