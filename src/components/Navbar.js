@@ -28,7 +28,7 @@ const Example = (props) => {
                     <img src={logo} alt="logo" className="logo" />
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
-                <Collapse className="text-center" isOpen={isOpen} navbar>
+                <Collapse className="px-3 text-center" isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
 
                         <NavItem>

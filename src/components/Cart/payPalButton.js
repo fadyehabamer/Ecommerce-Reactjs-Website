@@ -46,7 +46,7 @@ export default class MyApp extends React.Component {
             <PaypalExpressBtn env={env}
                 client={client}
                 currency={currency}
-                total={this.props.total}
+                total={this.props.totalAmount}
                 onError={onError}
                 onSuccess={onSuccess}
                 onCancel={onCancel} />
