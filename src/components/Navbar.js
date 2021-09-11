@@ -1,5 +1,5 @@
-import React, {useState } from 'react'
-// import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../logo.svg'
 // import { ButtonContainer } from './Button'
 // import styled from 'styled-components'
@@ -32,19 +32,30 @@ const Example = (props) => {
                     <Nav className="ml-auto" navbar>
 
                         <NavItem>
-                            <NavLink href="/productlist">Products</NavLink>
+                            <NavLink>
+                                <Link to="/productlist">
+                                    Products
+                                </Link>
+                            </NavLink>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink href="/about">About</NavLink>
+                            <NavLink href="/about">
+                                <Link to="/about">
+                                    About
+                                </Link>
+                            </NavLink>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink href="/cart">
-                                <span className="mr-2">
-                                    <i className="fas fa-cart-plus"></i>
-                                    Cart
-                                </span>
+                            <NavLink>
+                                <Link to="/cart">
+                                    <span className="mr-2">
+                                        <i className="fas fa-cart-plus"></i>
+                                        Cart
+                                    </span>
+                                </Link>
+
 
                             </NavLink>
 
