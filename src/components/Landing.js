@@ -20,11 +20,11 @@ export default class Landing extends Component {
                 <div className="container stats my-5">
                     <div className="col-md-12">
                     <h2 className="main-text">
-                        Our Statistics
+                       <span> Our Statistics </span>
                     </h2>
                         <div className="row ">
                             <div className="col-xl-3 col-lg-6">
-                                <div className="card l-bg-cherry">
+                                <div className="card l-bg-white">
                                     <div className="card-statistic-3 p-4">
                                         <div className="card-icon card-icon-large"><i className="fas fa-shopping-cart"></i></div>
                                         <div className="mb-4">
@@ -41,13 +41,13 @@ export default class Landing extends Component {
                                             </div>
                                         </div>
                                         <div className="progress mt-1 " data-height="8">
-                                            <div className="progress-bar l-bg-cherry" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
+                                            <div className="progress-bar l-bg-white" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-xl-3 col-lg-6">
-                                <div className="card l-bg-blue-dark">
+                                <div className="card l-bg-orange-dark">
                                     <div className="card-statistic-3 p-4">
                                         <div className="card-icon card-icon-large"><i className="fas fa-users"></i></div>
                                         <div className="mb-4">
@@ -64,13 +64,13 @@ export default class Landing extends Component {
                                             </div>
                                         </div>
                                         <div className="progress mt-1 " data-height="8">
-                                            <div className="progress-bar l-bg-blue-dark" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
+                                            <div className="progress-bar l-bg-orange-dark" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-xl-3 col-lg-6">
-                                <div className="card l-bg-green-dark">
+                                <div className="card l-bg-white">
                                     <div className="card-statistic-3 p-4">
                                         <div className="card-icon card-icon-large"><i className="fas fa-ticket-alt"></i></div>
                                         <div className="mb-4">
@@ -87,7 +87,7 @@ export default class Landing extends Component {
                                             </div>
                                         </div>
                                         <div className="progress mt-1 " data-height="8">
-                                            <div className="progress-bar l-bg-green-dark" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div className="progress-bar l-bg-white" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </div>
