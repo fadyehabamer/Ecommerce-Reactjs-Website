@@ -43,11 +43,14 @@ body {
     transform: translateY(-20px);
 }
 
-.l-bg-cherry {
-    background: linear-gradient(to right, #493240, #f09) !important;
-    color: #fff;
+.l-bg-white {
+    background: #ADA996;  
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2 );  
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2);
+    
+    color: var(--maindark);
 }
-
+/* 
 .l-bg-blue-dark {
     background: linear-gradient(to right, #373b44, #4286f4) !important;
     color: #fff;
@@ -56,7 +59,7 @@ body {
 .l-bg-green-dark {
     background: linear-gradient(to right, #0a504a, #38ef7d) !important;
     color: #fff;
-}
+} */
 
 .l-bg-orange-dark {
     background: linear-gradient(to right, #a86008, #ffba56) !important;
