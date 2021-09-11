@@ -11,5 +11,5 @@
 - React.js
 - React Router Dom
 - Boostrap
-- React Strap
+- ReactStrap
 - Styled Components
