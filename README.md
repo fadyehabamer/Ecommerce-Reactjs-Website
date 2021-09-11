@@ -12,3 +12,4 @@
 - React Router Dom
 - Boostrap
 - React Strap
+- Styled Components
