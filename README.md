@@ -1,7 +1,7 @@
 # ITI Graduation Project August-2021
-> An E-Commerce application Built mainly with **React.js**
+> **Amazon** An E-Commerce application Built mainly with **React.js**
 
-### Overview For the Project
+### 🌍 Overview For the Project
  **This is an E-Commerce website named "Amazon" for selling Electronics like : mobile phones , tablets , laptops , etc**
 <br>
 **Amazon app consists of 6 pages ( components )**
@@ -19,8 +19,8 @@
 
 <hr>
 
-### Technical Overview For the Project
-#### Technologies used :
+### 👨‍💻 Technical Overview For the Project
+**Technologies used :**
 - React.js
 - React Router Dom
 - Boostrap
@@ -31,12 +31,12 @@
 
 <hr>
 
-### For installation
-#### open your Text Editior inside the project folder and hit this command
+### 📥 For installation
+**open your Text Editior inside the project folder and hit this command**
 
 ```npm
 npm install
 ```
-#### This will do 2 important things
+**This will do 2 important things**
 - Install all required modules
 - Open the project on a LocalHost on your default Browser
