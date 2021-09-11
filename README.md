@@ -20,6 +20,9 @@
 
 ### For installation
 #### open your Text Editior inside the project folder and hit this command
+
 ```npm
 npm install
 ```
+#### This will do 2 important things
+- Install all required modules
