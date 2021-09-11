@@ -17,3 +17,8 @@
 - PayPal Api
 
 <hr>
+
+### For installation
+```npm
+npm install
+```
