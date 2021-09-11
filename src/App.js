@@ -27,15 +27,14 @@ function App() {
 
       <Switch>
         {/* Home Component */}
-        <Route exact path="/" component={SignUp} />
-        <Route exact path="/landing" component={Landing} />
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/signup" component={SignUp} />
         <Route path="/productlist" component={ProductList} />
 
         <Route path="/about" component={About} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
 
-        <Route path="/signup" component={SignUp} />
 
 
         {/* 404 Page  */}

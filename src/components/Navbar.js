@@ -25,7 +25,7 @@ const Example = (props) => {
         <React.Fragment>
             <Navbar className="px-3" color="dark" dark expand="md">
                 <NavbarBrand>
-                <Link to="/landing">
+                <Link to="/">
                     <img src={logo} alt="logo" className="logo" />
                 </Link>
                 </NavbarBrand>
@@ -52,7 +52,7 @@ const Example = (props) => {
 
                         <NavItem>
                             <NavLink>
-                                <Link to="/">
+                                <Link to="/signup">
                                     <span className="mr-2">
                                     <i className="fas fa-user"></i>
                                         Register
