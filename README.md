@@ -2,20 +2,20 @@
 > An E-Commerce application Built mainly with **React.js**
 
 ### Overview For the Project
-> **This is an E-Commerce website named "Amazon" for selling Electronics like : mobile phones , tablets , laptops , etc**
-> <br>
-> **Amazon app consists of 6 pages ( components )**
-> - Landing page
->   - welcome page and some stats. of app
-> - About Page
->   - some information about me with external links to my social accounts
->   - Feel Free to connect
-> - Regestration Page
->   - sign up into amazon
-> - Products Page
->   - what Amazon sells
-> - Cart Page
->   - where your buyed products goes
+ **This is an E-Commerce website named "Amazon" for selling Electronics like : mobile phones , tablets , laptops , etc**
+<br>
+**Amazon app consists of 6 pages ( components )**
+- Landing page
+  - welcome page and some stats. of app
+- About Page
+  - some information about me with external links to my social accounts
+  - Feel Free to connect
+- Regestration Page
+  - sign up into amazon
+- Products Page
+  - what Amazon sells
+- Cart Page
+  - where your buyed products goes
 
 <hr>
 
