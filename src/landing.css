@@ -26,9 +26,10 @@ body {
     animation: action 1s infinite alternate;
 }
 
-.stats{
+.stats {
     margin-top: 155px !important;
 }
+
 .stats .card {
     background-color: #fff;
     border-radius: 10px;
@@ -39,17 +40,18 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.stats .card:hover{
+.stats .card:hover {
     transform: translateY(-20px);
 }
 
 .l-bg-white {
-    background: #ADA996;  
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2 );  
+    background: #ADA996;
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2);
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2);
-    
+
     color: var(--maindark);
 }
+
 /* 
 .l-bg-blue-dark {
     background: linear-gradient(to right, #373b44, #4286f4) !important;
@@ -62,7 +64,7 @@ body {
 } */
 
 .l-bg-orange-dark {
-    background: linear-gradient(to right, #a86008, #ffba56) !important;
+    background: linear-gradient(to right, #f9900e, #ffba56) !important;
     color: #fff;
 }
 
@@ -83,7 +85,8 @@ body {
     top: 20px;
     opacity: 0.2;
 }
-.stats .stat-percent{
+
+.stats .stat-percent {
     font-weight: bold;
     z-index: 999;
 }
