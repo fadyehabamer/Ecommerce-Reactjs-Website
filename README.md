@@ -28,6 +28,7 @@
 - Styled Components
 - Font Awesome
 - PayPal Api
+  - Not fully functioned
 
 <hr>
 
