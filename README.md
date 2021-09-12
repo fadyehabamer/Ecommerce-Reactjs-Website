@@ -10,7 +10,7 @@
 - About Page
   - some information about me with external links to my social accounts
   - Feel Free to connect
-- Regestration Page
+- Registration Page
   - sign up into amazon
 - Products Page
   - what Amazon sells
