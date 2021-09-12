@@ -1,5 +1,5 @@
 # ITI Graduation Project August-2021
-> **Amazon** An E-Commerce application Built mainly with **React.js**
+> **Amazon** an E-Commerce application Built mainly with **React.js**
 
 ### 🌍 Overview For the Project
  **This is an E-Commerce website named "Amazon" for selling Electronics like : mobile phones , tablets , laptops , etc**
