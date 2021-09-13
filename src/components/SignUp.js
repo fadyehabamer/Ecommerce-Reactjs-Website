@@ -112,10 +112,10 @@ export default class RegisterForm extends React.Component {
     }
 
     if (typeof fields["password"] !== "undefined") {
-        if (!fields["password"].match(/^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&]).*$/)) {
-            formIsValid = false;
-            errors["password"] = "*Please password which contains capital , small , numbers , special charachters.";
-        }
+      if (!fields["password"].match(/^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&]).*$/)) {
+        formIsValid = false;
+        errors["password"] = "*Please password which contains capital , small , numbers , special charachters.";
+      }
     }
 
     this.setState({
@@ -159,7 +159,9 @@ export default class RegisterForm extends React.Component {
               onChange={this.handleChange}
             />
             <div className="errorMsg">{this.state.errors.mobileno}</div>
-            <label>Password  ("8" capital,small,numbers,special chars)</label>
+            <label>Password
+              <br />
+              ("8" capital,small,numbers,special chars)</label>
             <input
               type="password"
               name="password"
