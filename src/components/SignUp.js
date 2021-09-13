@@ -8,6 +8,7 @@ import { RegisteredUsers } from "../context/RegisteredUsers";
 import Swal from 'sweetalert2'
 
 export default class RegisterForm extends React.Component {
+
   static contextType = RegisteredUsers;
 
   constructor() {
@@ -57,7 +58,7 @@ export default class RegisterForm extends React.Component {
         password: password,
       });
 
-      // this.props.history.push('/productlist');
+      this.props.history.push('/productlist');
     }
   }
 
@@ -80,7 +81,7 @@ export default class RegisterForm extends React.Component {
 
     if (!fields["emailid"]) {
       formIsValid = false;
-      errors["emailid"] = "*Please enter your email-ID.";
+      errors["emailid"] = "*Please enter your email address.";
     }
 
     if (typeof fields["emailid"] !== "undefined") {
@@ -90,7 +91,7 @@ export default class RegisterForm extends React.Component {
       );
       if (!pattern.test(fields["emailid"])) {
         formIsValid = false;
-        errors["emailid"] = "*Please enter valid email-ID.";
+        errors["emailid"] = "*Please enter valid email address.";
       }
     }
 
@@ -135,7 +136,7 @@ export default class RegisterForm extends React.Component {
             name="userRegistrationForm"
             onSubmit={this.submituserRegistrationForm}
           >
-            <label>Name</label>
+            <label>Full Name:</label>
             <input
               type="text"
               name="username"
@@ -143,7 +144,12 @@ export default class RegisterForm extends React.Component {
               onChange={this.handleChange}
             />
             <div className="errorMsg">{this.state.errors.username}</div>
-            <label>Email ID:</label>
+            <label>Email Address:
+            <br/>
+            <span style={{fontSize:"11px",fontWeight:"bold"}} >
+                Valid email address
+              </span>
+            </label>
             <input
               type="text"
               name="emailid"
@@ -151,7 +157,12 @@ export default class RegisterForm extends React.Component {
               onChange={this.handleChange}
             />
             <div className="errorMsg">{this.state.errors.emailid}</div>
-            <label>Mobile No:</label>
+            <label>Mobile :
+            <br />
+              <span style={{fontSize:"11px",fontWeight:"bold"}} >
+                An Egyptian number "11 digits"
+              </span>
+            </label>
             <input
               type="text"
               name="mobileno"
@@ -161,7 +172,9 @@ export default class RegisterForm extends React.Component {
             <div className="errorMsg">{this.state.errors.mobileno}</div>
             <label>Password
               <br />
-              ("8" capital,small,numbers,special chars)</label>
+              <span style={{fontSize:"11px",fontWeight:"bold"}} >
+              At least 8 capital,small,numbers,special chars
+               </span></label>
             <input
               type="password"
               name="password"
