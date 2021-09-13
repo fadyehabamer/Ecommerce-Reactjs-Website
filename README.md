@@ -5,6 +5,7 @@
  **This is an E-Commerce website named "Amazon" for selling Electronics like : mobile phones , tablets , laptops , etc**
 <br>
 **Amazon app consists of 6 pages ( components )**
+
 - Landing page
   - welcome page and some stats. of app
 - About Page
@@ -16,7 +17,10 @@
   - what Amazon sells
 - Cart Page
   - where your buyed products goes
-
+- 404 Page
+  - if you go to /blablabla
+- Must signup page
+  - when you try to access products page without registration
 <hr>
 
 ### 👨‍💻 Technical Overview For the Project
@@ -27,6 +31,7 @@
 - ReactStrap
 - Styled Components
 - Font Awesome
+- Sweet Alert 2
 - PayPal Api
 
 <hr>
