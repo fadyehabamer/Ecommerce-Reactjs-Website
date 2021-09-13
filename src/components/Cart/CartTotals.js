@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import '../../App.css'
 export default class CartTotals extends Component {
     render() {
-        // * DESTRUCTION
-
+        // * Destructure
         const {
             cartSubTotal,
             cartTax,

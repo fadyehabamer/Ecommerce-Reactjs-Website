@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import App from '../App';
+// * useState for Protected routes
 
 import '../signup.css';
 
+
+
 export default class RegisterForm extends React.Component {
+
     constructor() {
         super();
         this.state = {
@@ -34,7 +39,8 @@ export default class RegisterForm extends React.Component {
             fields["password"] = "";
             this.setState({ fields: fields });
             alert("Form submitted");
-            this.props.history.push('/');
+            this.props.history.push('/productlist');
+            console.log(this.props)
         }
 
     }
@@ -106,7 +112,9 @@ export default class RegisterForm extends React.Component {
 
 
     render() {
+
         return (
+
             <div id="main-registration-container">
                 <div id="register">
                     <h3>Registration page</h3>

@@ -5,10 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // * React Router
 import { Switch, Route } from 'react-router-dom'
 
+
+
 // * components
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
-// import Product from './components/Product';
 import Details from './components/Details';
 import Cart from './components/Cart';
 import Error from './components/Error';
@@ -16,7 +17,9 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Modal from './components/Modal'
 import SignUp from './components/SignUp'
+
 function App() {
+  // const [isAuth, setAuth] = useState(false)
   return (
     <React.Fragment>
 
@@ -34,7 +37,6 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
-
 
 
         {/* 404 Page  */}
