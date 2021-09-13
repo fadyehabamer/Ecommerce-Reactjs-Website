@@ -33,7 +33,7 @@
 <hr>
 
 ### 📥 For installation
-**open your Text Editior inside the project folder and hit this command**
+**open the CLI in your Text Editior inside the project folder and hit this command**
 
 ```npm
 npm install
