@@ -17,7 +17,6 @@ class ProductProvider extends Component {
         // products:[...storeProducts],
 
         products: [],
-
         // * one single product
         detailProduct: detailProduct,
 
@@ -44,11 +43,11 @@ class ProductProvider extends Component {
 
     //  * Get Copy of Products not a refrence of them
     setProducts = () => {
-        let tempProducts = [...storeProducts];
-        // storeProducts.forEach(item => {
-        //     const singleItem = { ...item }
-        //     tempProducts = [...tempProducts, singleItem]
-        // })
+        let tempProducts = [];
+        storeProducts.forEach(item => {
+            const singleItem = { ...item }
+            tempProducts = [...tempProducts, singleItem]
+        })
         this.setState(() => {
             return { products: tempProducts }
         })
@@ -167,23 +166,22 @@ class ProductProvider extends Component {
     };
 
     clearCart = () => {
-        this.setState(
-            () => {
-                return {
-                    cart: []
-                    // * issues : 
-                    // * item is still in cart
-                    // * Cart Total is as same
+        this.setState(() => {
+            return {
+                cart: []
+                // * issues : 
+                // * item is still in cart
+                // * Cart Total is as same
 
-                }
-            }, () => {
-                // * set values to default
-                // * SOLVED item is still in car
-                this.setProducts()
+            }
+        }, () => {
+            // * set values to default
+            // * SOLVED item is still in car
+            this.setProducts()
 
-                // * SOLVED Cart Total is as same
-                this.addTotals()
-            })
+            // * SOLVED Cart Total is as same
+            this.addTotals()
+        })
     }
 
     addTotals = () => {
@@ -217,7 +215,8 @@ class ProductProvider extends Component {
                 value={{
                     // products:this.state.products
 
-                    // * pass fucs to children
+                    // * DESTRUCTION 😶😶 
+
                     ...this.state,
                     handleDetail: this.handleDetail,
                     addToCart: this.addToCart,
@@ -232,12 +231,10 @@ class ProductProvider extends Component {
                 }}>
 
                 {this.props.children}
-
             </ProductContext.Provider>
         )
     }
 }
 
-// * pass state as props
 const ProductConsumer = ProductContext.Consumer;
 export { ProductProvider, ProductConsumer }
