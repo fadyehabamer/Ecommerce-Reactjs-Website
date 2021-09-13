@@ -159,7 +159,7 @@ export default class RegisterForm extends React.Component {
               onChange={this.handleChange}
             />
             <div className="errorMsg">{this.state.errors.mobileno}</div>
-            <label>Password  ("8"capital,small,numbers,special chars)</label>
+            <label>Password  ("8" capital,small,numbers,special chars)</label>
             <input
               type="password"
               name="password"
