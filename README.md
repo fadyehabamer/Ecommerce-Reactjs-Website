@@ -28,12 +28,11 @@
 - Styled Components
 - Font Awesome
 - PayPal Api
-  - Not fully functioned
 
 <hr>
 
 ### 📥 For installation
-**open the CLI in your Text Editior inside the project folder and hit this command**
+**open your Text Editior inside the project folder and hit this command**
 
 ```npm
 npm install
