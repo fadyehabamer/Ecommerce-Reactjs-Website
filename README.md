@@ -1,4 +1,9 @@
 # ITI Graduation Project August-2021
+
+<p>
+  <img src="THUMB.jpg" align="center">
+</p>
+
 > **Amazon** an E-Commerce application Built mainly with **React.js**
 
 ### 🌍 Overview For the Project
