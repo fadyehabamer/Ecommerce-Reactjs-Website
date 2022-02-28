@@ -23,7 +23,7 @@
 - Cart Page
   - where your buyed products goes
 - 404 Page
-  - if you go to /blablabla
+  - if you go to /blablabla or something not found
 - Must signup page
   - when you try to access products page without registration
 <hr>
