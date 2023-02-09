@@ -47,9 +47,13 @@
 ```npm
 npm install
 ```
-**This will do 2 important things**
-- Install all required modules
-- Open the project on a LocalHost on your default Browser
+**This will Install all required modules**
+
+**After Finish wirte**
+```npm 
+npm start
+```
+**This will run the project on a LocalHost on your default Browser**
 
 <hr>
 
