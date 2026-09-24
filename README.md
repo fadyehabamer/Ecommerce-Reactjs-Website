@@ -42,18 +42,27 @@
 <hr>
 
 ### 📥 For installation
-**open CLI in your Text Editior inside the project folder and Type this command**
+**Live demo:** https://ecommerce-reactjs-website.vercel.app
 
-```npm
-npm install
-```
-**This will Install all required modules**
+Requirements: Node.js 18 or newer and npm.
 
-**After Finish wirte**
-```npm 
-npm start
+```sh
+git clone https://github.com/fadyehabamer/Ecommerce-Reactjs-Website.git
+cd Ecommerce-Reactjs-Website
+npm ci          # install the exact versions from package-lock.json
+npm start       # dev server on http://localhost:3000
 ```
-**This will run the project on a LocalHost on your default Browser**
+
+Other scripts:
+
+| Command | What it does |
+| --- | --- |
+| `npm test` | Runs the Jest tests in watch mode (`CI=true npm test` runs them once). Covers the cart logic in `src/Context.test.js` and route smoke tests in `src/App.test.js`. |
+| `npm run build` | Creates a production build in `build/`. |
+
+The project uses `react-scripts` 4 (webpack 4). The `start` and `build` scripts pass `--openssl-legacy-provider` so that they work on Node 17+ (OpenSSL 3).
+
+**Deployment:** the site is hosted on Vercel with the Create React App preset (build command `npm run build`, output directory `build`). The preset already serves `index.html` for client-side routes like `/cart`.
 
 <hr>
 
