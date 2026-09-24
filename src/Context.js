@@ -32,7 +32,7 @@ class ProductProvider extends Component {
         modalProduct: detailProduct,
 
         // * Cart
-        carSubTotal: 0,
+        cartSubTotal: 0,
         cartTax: 0,
         cartTotal: 0
     }
