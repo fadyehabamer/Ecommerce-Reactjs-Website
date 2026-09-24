@@ -3,7 +3,6 @@ import '../landing.css'
 
 export default class Default extends Component {
     render() {
-        console.log(this.props)
         return (
             <React.Fragment>
                 <div className="container">

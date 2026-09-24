@@ -8,11 +8,6 @@ export default class CartList extends Component {
     const { value } = this.props;
     const { cart } = this.props.value;
 
-     // * ALL Methods 
-     console.log(value)
-
-     // * ALL Products
-     console.log(cart)
     return (
       <div className="container-fluid">
         {cart.map(item => (
