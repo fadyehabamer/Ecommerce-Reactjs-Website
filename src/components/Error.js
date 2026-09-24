@@ -9,7 +9,7 @@ export default class Default extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <img className="mx-auto d-block banner" alt="404" src="../img/404.svg" />
+                            <img className="mx-auto d-block banner" alt="404" src={`${process.env.PUBLIC_URL}/img/404.svg`} />
                             <h3 className="text-center" >
                                 The requested URL{"  "}
                                 <span className="text-danger
