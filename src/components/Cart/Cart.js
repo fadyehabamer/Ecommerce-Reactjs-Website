@@ -13,7 +13,7 @@ export default class Store extends Component {
                     {value => {
                         const { cart } = value
 
-                        {/* CONDITIONAL RENDERING */ }
+                        // * CONDITIONAL RENDERING
 
                         if (cart.length > 0) {
                             return (
@@ -21,7 +21,7 @@ export default class Store extends Component {
                                     <Title name="your" title="cart" />
                                     <CartColumns />
                                     <CartList value={value} />
-                                    <CartTotals value={value} />
+                                    <CartTotals value={value} history={this.props.history} />
                                 </section>
                             );
                         }

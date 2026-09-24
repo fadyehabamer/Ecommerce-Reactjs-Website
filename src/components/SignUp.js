@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 // * useState for Protected routes
 
 import "../signup.css";
@@ -136,15 +136,16 @@ export default class RegisterForm extends React.Component {
             name="userRegistrationForm"
             onSubmit={this.submituserRegistrationForm}
           >
-            <label>Full Name:</label>
+            <label htmlFor="username">Full Name:</label>
             <input
               type="text"
+              id="username"
               name="username"
               value={this.state.fields.username}
               onChange={this.handleChange}
             />
             <div className="errorMsg">{this.state.errors.username}</div>
-            <label>Email Address:
+            <label htmlFor="emailid">Email Address:
             <br/>
             <span style={{fontSize:"11px",fontWeight:"bold"}} >
                 Valid email address
@@ -152,12 +153,13 @@ export default class RegisterForm extends React.Component {
             </label>
             <input
               type="text"
+              id="emailid"
               name="emailid"
               value={this.state.fields.emailid}
               onChange={this.handleChange}
             />
             <div className="errorMsg">{this.state.errors.emailid}</div>
-            <label>Mobile :
+            <label htmlFor="mobileno">Mobile :
             <br />
               <span style={{fontSize:"11px",fontWeight:"bold"}} >
                 An Egyptian number "11 digits"
@@ -165,18 +167,20 @@ export default class RegisterForm extends React.Component {
             </label>
             <input
               type="text"
+              id="mobileno"
               name="mobileno"
               value={this.state.fields.mobileno}
               onChange={this.handleChange}
             />
             <div className="errorMsg">{this.state.errors.mobileno}</div>
-            <label>Password
+            <label htmlFor="password">Password
               <br />
               <span style={{fontSize:"11px",fontWeight:"bold"}} >
               At least 8 capital,small,numbers,special chars
                </span></label>
             <input
               type="password"
+              id="password"
               name="password"
               value={this.state.fields.password}
               onChange={this.handleChange}

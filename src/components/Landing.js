@@ -12,7 +12,7 @@ export default class Landing extends Component {
                             The meaning of <span> Inclusion</span>
                         </div>
                         <div className="col-sm-6 second-column  ">
-                            <img className="banner" src="../img/landing.svg" alt="" />
+                            <img className="banner" src={`${process.env.PUBLIC_URL}/img/landing.svg`} alt="" />
                         </div>
                     </div>
                 </div>

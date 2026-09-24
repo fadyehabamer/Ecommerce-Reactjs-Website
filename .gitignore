@@ -4,3 +4,6 @@
 # Ada Library Information
 *.ali
 node_modules
+
+# Create React App build output
+/build

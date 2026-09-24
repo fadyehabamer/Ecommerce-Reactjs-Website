@@ -25,7 +25,7 @@ import { AuthenticatedUser } from '../src/context/AuthenticatedUser'
 function App() {
   // const [isAuth, setAuth] = useState(false)
 
-  const { isAuthenticated, user, setUser } = React.useContext(AuthenticatedUser)
+  const { isAuthenticated } = React.useContext(AuthenticatedUser)
 
   return (
     <React.Fragment>
@@ -44,11 +44,12 @@ function App() {
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
 
-        {isAuthenticated ? (
-          <Route path="/productList" component={ProductList} />
-        ) : (
-          <RedirectSign />
-        )}
+        {/* Only the products page needs registration; a path-less element
+            here would swallow every unknown URL and hide the 404 page */}
+        <Route
+          path="/productList"
+          component={isAuthenticated ? ProductList : RedirectSign}
+        />
 
 
         {/* 404 Page  */}

@@ -15,12 +15,9 @@ export const RegisteredUsersProvider = (props) => {
   ]);
 
   const isRegisteredUser = (user) => {
-    usersDB.find((item) => {
-      if (item.email == user.email && item.password == user.password) {
-        return true;
-      }
-    });
-    return false;
+    return usersDB.some(
+      (item) => item.email === user.email && item.password === user.password
+    );
   };
 
   // Function also logs the user in

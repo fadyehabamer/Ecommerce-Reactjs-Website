@@ -36,7 +36,7 @@ export default class About extends Component {
                             </div>
                         </div>
                         <div className="col-sm-6 second-column  ">
-                            <img className="banner" src="../img/dev.svg" alt="" />
+                            <img className="banner" src={`${process.env.PUBLIC_URL}/img/dev.svg`} alt="" />
                         </div>
                     </div>
 

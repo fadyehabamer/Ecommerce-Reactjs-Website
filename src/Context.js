@@ -32,7 +32,7 @@ class ProductProvider extends Component {
         modalProduct: detailProduct,
 
         // * Cart
-        carSubTotal: 0,
+        cartSubTotal: 0,
         cartTax: 0,
         cartTotal: 0
     }
@@ -157,10 +157,14 @@ class ProductProvider extends Component {
             return item.id !== id;
         });
 
+        // * keep the details page in sync, otherwise it still shows "In cart"
+        const { detailProduct } = this.state;
+
         this.setState(() => {
             return {
                 cart: [...tempCart],
-                products: [...tempProducts]
+                products: [...tempProducts],
+                detailProduct: detailProduct.id === id ? { ...removedProduct } : detailProduct
             };
         }, this.addTotals);
     };
@@ -168,7 +172,9 @@ class ProductProvider extends Component {
     clearCart = () => {
         this.setState(() => {
             return {
-                cart: []
+                cart: [],
+                // * keep the details page in sync, otherwise it still shows "In cart"
+                detailProduct: { ...this.state.detailProduct, inCart: false, count: 0, total: 0 }
                 // * issues : 
                 // * item is still in cart
                 // * Cart Total is as same
