@@ -38,7 +38,6 @@ export default class Modal extends Component {
                                             </Link>
                                             <Link to="/cart">
                                                 <button className="details-btn"
-                                                    cart
                                                     onClick={() => {
                                                         closeModal();
                                                     }}
