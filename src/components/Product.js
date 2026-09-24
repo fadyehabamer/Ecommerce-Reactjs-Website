@@ -21,6 +21,7 @@ export default class Product extends Component {
                   </Link>
                   <button
                     className="cart-btn"
+                    aria-label={inCart ? `${title} is in the cart` : `Add ${title} to cart`}
                     disabled={inCart ? true : false}
                     onClick={() => {
                       value.addToCart(id);
@@ -32,7 +33,7 @@ export default class Product extends Component {
                         in cart
                       </p>
                     ) : (
-                      <i className="fas fa-cart-plus" />
+                      <i className="fas fa-cart-plus" aria-hidden="true" />
                     )}
                   </button>
                 </div>

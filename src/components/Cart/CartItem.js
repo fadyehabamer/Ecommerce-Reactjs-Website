@@ -26,30 +26,39 @@ export default class CartItem extends Component {
                     <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0 ">
                         <div className="d-flex justify-content-center ">
                             <div>
-                                <span
+                                <button
+                                    type="button"
                                     className="btn btn-black mx-1"
+                                    aria-label={`Decrease quantity of ${title}`}
                                     onClick={() => {
                                         return decrement(id);
                                     }}
                                 >
                                     -
-                                </span>
+                                </button>
                                 <span className="btn btn-black mx-1">{count}</span>
-                                <span
+                                <button
+                                    type="button"
                                     className="btn btn-black mx-1"
+                                    aria-label={`Increase quantity of ${title}`}
                                     onClick={() => {
                                         return increment(id);
                                     }}
                                 >
                                     +
-                                </span>
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div className="col-10 mx-auto col-lg-2 ">
-                        <div className=" cart-icon" onClick={() => removeItem(id)}>
-                            <i className="fas fa-trash" />
-                        </div>
+                        <button
+                            type="button"
+                            className="cart-icon"
+                            aria-label={`Remove ${title} from cart`}
+                            onClick={() => removeItem(id)}
+                        >
+                            <i className="fas fa-trash" aria-hidden="true" />
+                        </button>
                     </div>
 
                     <div className="col-10 mx-auto col-lg-2 ">
