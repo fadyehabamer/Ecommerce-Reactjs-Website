@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 // * useState for Protected routes
 
 import "../signup.css";

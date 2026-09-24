@@ -13,7 +13,7 @@ export default class Store extends Component {
                     {value => {
                         const { cart } = value
 
-                        {/* CONDITIONAL RENDERING */ }
+                        // * CONDITIONAL RENDERING
 
                         if (cart.length > 0) {
                             return (

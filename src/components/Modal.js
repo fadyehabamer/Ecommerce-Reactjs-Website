@@ -7,10 +7,10 @@ export default class Modal extends Component {
         return (
             <ProductConsumer>
                 {value => {
-                    {/* Properties on state */}
+                    // * Properties on state
                     const { modalOpen, closeModal } = value;
 
-                    {/* Values from modalproduct */}
+                    // * Values from modalproduct
                     const { img, title, price } = value.modalProduct;
                     if (!modalOpen) {
                         return null;

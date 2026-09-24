@@ -25,7 +25,7 @@ import { AuthenticatedUser } from '../src/context/AuthenticatedUser'
 function App() {
   // const [isAuth, setAuth] = useState(false)
 
-  const { isAuthenticated, user, setUser } = React.useContext(AuthenticatedUser)
+  const { isAuthenticated } = React.useContext(AuthenticatedUser)
 
   return (
     <React.Fragment>
