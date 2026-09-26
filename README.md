@@ -1,5 +1,7 @@
 # ITI Graduation Project August-2021
 
+[![CI](https://github.com/fadyehabamer/Ecommerce-Reactjs-Website/actions/workflows/ci.yml/badge.svg)](https://github.com/fadyehabamer/Ecommerce-Reactjs-Website/actions/workflows/ci.yml)
+
 <p>
   <img src="THUMB.jpg" align="center">
 </p>
